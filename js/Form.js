@@ -34,7 +34,10 @@ class Form {
       Hello ${this.input.value()}
       </br>wait for another player to join...`;
       this.greeting.html(message);
-      
+      playerCount += 1
+      player.name = this.input.value()
+      player.index = playerCount
+      player.updateCount(playerCount)
       //player.addPlayer();
      // player.getDistance(); //BP
     });
